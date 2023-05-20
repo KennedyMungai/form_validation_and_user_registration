@@ -1,4 +1,6 @@
 'use client'
+import { useEffect, useRef, useState } from 'react'
+
 type Props = {}
 
 const Register = (props: Props) => {
