@@ -28,6 +28,14 @@ const Register = (props: Props) => {
 	useEffect(() => {
 		userRef.current?.focus()
 	}, [])
+
+	useEffect(() => {
+		const result = USER_REGEX.test(user)
+		console.log(result)
+		console.log(user)
+		setValidName(result)
+	}, [user])
+	
 	
 
 	return <div>Register</div>
