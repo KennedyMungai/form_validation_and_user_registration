@@ -36,6 +36,15 @@ const Register = (props: Props) => {
 		setValidName(result)
 	}, [user])
 	
+	useEffect(() => {
+		const result = PWD_REGEX.test(pwd)
+		console.log(result)
+		console.log(pwd)
+		setValidPwd(result)
+
+		const match = pwd === matchPwd
+		setValidMatch(match)
+	}, [pwd, matchPwd])
 	
 
 	return <div>Register</div>
