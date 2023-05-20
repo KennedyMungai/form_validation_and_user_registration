@@ -10,6 +10,10 @@ const Register = (props: Props) => {
 	const userRef = useRef<HTMLInputElement>(null)
 	const errRef = useRef<HTMLInputElement>(null)
 
+	const [user, setUser] = useState<string>('')
+	const [validName, setValidName] = useState<boolean>(false)
+	const [userFocus, setUserFocus] = useState<boolean>(false)
+
 	return <div>Register</div>
 }
 
