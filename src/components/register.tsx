@@ -59,6 +59,7 @@ const Register = (props: Props) => {
 			>
 				{errMsg}
 			</p>
+			<h1 className='text-center'>Register</h1>
 		</section>
 	)
 }
