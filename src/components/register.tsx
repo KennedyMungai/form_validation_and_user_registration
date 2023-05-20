@@ -51,7 +51,7 @@ const Register = (props: Props) => {
 	}, [user, pwd, matchPwd])
 
 	return (
-		<section className='flex flex-col gap-2 bg-slate-400 p-5 rounded-lg'>
+		<section className='flex flex-col gap-2 bg-orange-500 p-5 rounded-lg'>
 			<p
 				className={errMsg ? 'text-red.600 uppercase' : 'hidden'}
 				aria-live='assertive'
