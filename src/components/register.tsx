@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import { faCheck, faTimes, faInfoCircle } from 'react-icons/fa'
+import { FaCheck, FaTimes, FaInfoCircle } from 'react-icons/fa'
 
 type Props = {}
 
