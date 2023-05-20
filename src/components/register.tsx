@@ -25,6 +25,11 @@ const Register = (props: Props) => {
 	const [errMsg, setErrMsg] = useState<string>('')
 	const [success, setSuccess] = useState<boolean>(false)
 
+	useEffect(() => {
+		userRef.current?.focus()
+	}, [])
+	
+
 	return <div>Register</div>
 }
 
