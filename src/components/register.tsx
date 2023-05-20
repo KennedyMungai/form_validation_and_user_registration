@@ -59,7 +59,7 @@ const Register = (props: Props) => {
 			>
 				{errMsg}
 			</p>
-			<h1 className='text-center'>Register</h1>
+			<h1 className='text-center text-2xl'>Register</h1>
 			<form>
 				<label htmlFor='username'>Username</label>
 				<input
