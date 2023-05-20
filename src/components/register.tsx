@@ -46,6 +46,9 @@ const Register = (props: Props) => {
 		setValidMatch(match)
 	}, [pwd, matchPwd])
 	
+	useEffect(() => {
+		setErrMsg('')
+	}, [user, pwd, matchPwd])
 
 	return <div>Register</div>
 }
