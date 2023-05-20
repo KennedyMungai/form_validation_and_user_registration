@@ -50,7 +50,7 @@ const Register = (props: Props) => {
 		setErrMsg('')
 	}, [user, pwd, matchPwd])
 
-	return <div>Register</div>
+	return <section className='flex flex-col'>Register</section>
 }
 
 export default Register
