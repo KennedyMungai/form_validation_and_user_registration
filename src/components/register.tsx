@@ -50,7 +50,17 @@ const Register = (props: Props) => {
 		setErrMsg('')
 	}, [user, pwd, matchPwd])
 
-	return <section className='flex flex-col gap-2'>Register</section>
+	return (
+		<section className='flex flex-col gap-2'>
+			<p
+				className={errMsg ? 'text-red.600 uppercase' : 'hidden'}
+				aria-live='assertive'
+				ref={errRef}
+			>
+				{errMsg}
+			</p>
+		</section>
+	)
 }
 
 export default Register
