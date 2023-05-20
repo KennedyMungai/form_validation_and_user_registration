@@ -22,6 +22,9 @@ const Register = (props: Props) => {
 	const [validMatch, setValidMatch] = useState<boolean>(false)
 	const [matchFocus, setMatchFocus] = useState<boolean>(false)
 
+	const [errMsg, setErrMsg] = useState<string>('')
+	const [success, setSuccess] = useState<boolean>(false)
+
 	return <div>Register</div>
 }
 
