@@ -14,6 +14,14 @@ const Register = (props: Props) => {
 	const [validName, setValidName] = useState<boolean>(false)
 	const [userFocus, setUserFocus] = useState<boolean>(false)
 
+	const [pwd, setPwd] = useState<string>('')
+	const [validPwd, setValidPwd] = useState<boolean>(false)
+	const [pwdFocus, setPwdFocus] = useState<boolean>(false)
+
+	const [matchPwd, setMatchPwd] = useState<string>('')
+	const [validMatch, setValidMatch] = useState<boolean>(false)
+	const [matchFocus, setMatchFocus] = useState<boolean>(false)
+
 	return <div>Register</div>
 }
 
