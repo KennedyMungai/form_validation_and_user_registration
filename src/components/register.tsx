@@ -60,6 +60,21 @@ const Register = (props: Props) => {
 				{errMsg}
 			</p>
 			<h1 className='text-center'>Register</h1>
+			<form>
+				<label htmlFor='username'>Username</label>
+				<input
+					type='text'
+					id='username'
+					ref={userRef}
+					autoComplete='off'
+					onChange={(e) => setUser(e.target.value)}
+					required
+					aria-invalid={validName ? 'false' : 'true'}
+					aria-describedby='uidnote'
+					onFocus={() => setUserFocus(true)}
+					onBlur={() => setUserFocus(false)}
+				/>
+			</form>
 		</section>
 	)
 }
