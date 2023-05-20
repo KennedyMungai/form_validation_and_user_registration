@@ -1,7 +1,9 @@
+import Register from '@/components/register'
+
 export default function Home() {
 	return (
 		<main className='flex justify-center items-center h-screen w-screen'>
-			<h1>Hello</h1>
+			<Register />
 		</main>
 	)
 }
